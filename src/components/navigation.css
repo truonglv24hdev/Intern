@@ -1,0 +1,225 @@
+/* Navigation Styles */
+.main-nav {
+  background-color: #ffffff;
+  height: auto;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  min-height: 80px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  max-width: 150px; /* Giới hạn chiều rộng của logo */
+}
+
+.logo a {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 80px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+.logo-main {
+  color: #0072bb;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 1.2;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+  margin-bottom: 2px;
+}
+
+.logo-sub {
+  color: #0072bb;
+  font-size: 8px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  margin-top: -2px;
+}
+
+/* Nav Menu Styles */
+.nav-menu-container {
+  display: flex;
+  justify-content: center; /* Căn giữa menu */
+  flex-grow: 1; /* Chiếm phần còn lại của container */
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end; /* Thay đổi từ center sang flex-end để căn phải */
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 0;
+  position: relative;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  color: #008eff;
+}
+
+.nav-menu li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #008eff;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #87CEEB ;
+}
+
+.language a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.language img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.language i {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 20px;
+  }
+
+  .nav-menu li a {
+    font-size: 12px;
+  }
+
+  .logo-main {
+    font-size: 10px;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    height: auto;
+    width: 100%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    padding: 15px;
+    height: auto;
+    width: 100%;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+
+  .nav-menu-container {
+    width: 100%;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .language {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 10px;
+  }
+  
+  .nav-menu li a {
+    font-size: 14px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+}

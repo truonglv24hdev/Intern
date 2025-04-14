@@ -1,0 +1,141 @@
+/* About Section Styles */
+.home-about-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 120px;
+  background-color: #F7FCFF;
+}
+
+.home-about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.home-about-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.home-about-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.home-about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.home-about-info {
+  flex: 1;
+  max-width: 50%;
+}
+
+.home-about-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #00191d;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.home-about-text {
+  font-size: 18px;
+  color: rgba(74, 74, 74, 0.7);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+.home-about-features {
+  display: flex;
+  gap: 40px;
+}
+
+.home-features-column {
+  flex: 1;
+}
+
+.home-feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.home-feature-check {
+  color: #0066FF;
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.home-feature-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive styles for About section */
+@media (max-width: 1200px) {
+  .home-about-section {
+    padding: 80px 60px;
+  }
+  
+  .home-about-subtitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-about-section {
+    padding: 60px 40px;
+  }
+  
+  .home-about-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .home-about-image, 
+  .home-about-info {
+    max-width: 100%;
+  }
+  
+  .home-about-subtitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-about-section {
+    padding: 50px 30px;
+  }
+  
+  .home-about-features {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .home-about-header {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-about-section {
+    padding: 40px 20px;
+  }
+  
+  .home-about-subtitle {
+    font-size: 24px;
+  }
+  
+  .home-about-text {
+    font-size: 16px;
+  }
+} 

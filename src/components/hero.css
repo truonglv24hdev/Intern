@@ -1,0 +1,201 @@
+.hero-section {
+  width: 100%;
+  max-width: 1440px;
+  height: 600px;
+  background-color: #EFF3FF;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Loại bỏ các pseudo-elements cũ */
+.hero-section::before,
+.hero-section::after {
+  content: none;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text {
+  max-width: 500px;
+  z-index: 1;
+}
+
+.hero-name {
+  color: #002A3D;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero-title {
+  color: #00191D;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.hero-description {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.hero-image {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  height: 100%;
+  object-fit: cover;
+  max-height: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Tạo 4 viền vuông tại 4 góc */
+.corner-shape {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  transform: rotate(-10deg);
+  z-index: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.corner-top-left {
+  top: -90px;
+  left: -90px;
+}
+
+.corner-top-right {
+  top: -90px;
+  right: -90px;
+}
+
+.corner-bottom-left {
+  bottom: -90px;
+  left: -90px;
+}
+
+.corner-bottom-right {
+  bottom: -90px;
+  right: -90px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .hero-section {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-content {
+    padding: 80px 50px;
+  }
+  
+  .hero-image img {
+    max-height: 500px;
+  }
+  
+  .corner-shape {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+  }
+  
+  .hero-text {
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+  
+  .hero-name {
+    font-size: 42px;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-image {
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    max-height: 450px;
+  }
+  
+  .corner-shape {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 40px 20px;
+  }
+  
+  .hero-name {
+    font-size: 36px;
+  }
+  
+  .hero-title {
+    font-size: 24px;
+  }
+  
+  .hero-image img {
+    max-height: 400px;
+  }
+  
+  .corner-shape {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 32px;
+  }
+  
+  .hero-title {
+    font-size: 22px;
+  }
+  
+  .hero-description {
+    font-size: 16px;
+  }
+  
+  .hero-image img {
+    max-height: 350px;
+  }
+  
+  .corner-shape {
+    width: 80px;
+    height: 80px;
+  }
+} 

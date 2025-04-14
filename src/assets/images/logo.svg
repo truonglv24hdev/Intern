@@ -1,0 +1,25 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="58" fill="white" stroke="#0086c9" stroke-width="2"/>
+  
+  <!-- Mountains -->
+  <path d="M20 85 L40 65 L50 75 L60 60 L70 70 L80 60 L100 80 L100 90 L20 90 Z" fill="#0086c9" />
+  
+  <!-- Water wave -->
+  <path d="M20 90 C30 85, 40 95, 50 90 C60 85, 70 95, 80 90 C90 85, 100 95, 110 90 L110 100 L20 100 Z" fill="#0086c9" />
+  
+  <!-- People -->
+  <circle cx="50" cy="45" r="5" fill="#0086c9" />
+  <circle cx="70" cy="45" r="5" fill="#0086c9" />
+  
+  <!-- Bodies -->
+  <path d="M50 50 L50 65 L45 80" stroke="#0086c9" stroke-width="3" fill="none" />
+  <path d="M70 50 L70 65 L75 80" stroke="#0086c9" stroke-width="3" fill="none" />
+  
+  <!-- Arms -->
+  <path d="M50 55 L60 60" stroke="#0086c9" stroke-width="3" fill="none" />
+  <path d="M70 55 L60 60" stroke="#0086c9" stroke-width="3" fill="none" />
+  
+  <!-- Child -->
+  <circle cx="60" cy="55" r="3" fill="#0086c9" />
+  <path d="M60 58 L60 65" stroke="#0086c9" stroke-width="2" fill="none" />
+</svg> 
