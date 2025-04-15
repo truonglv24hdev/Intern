@@ -8,7 +8,6 @@
   overflow: hidden;
 }
 
-/* Loại bỏ các pseudo-elements cũ */
 .hero-section::before,
 .hero-section::after {
   content: none;
@@ -67,7 +66,6 @@
   z-index: 1;
 }
 
-/* Tạo 4 viền vuông tại 4 góc */
 .corner-shape {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
@@ -99,7 +97,6 @@
   right: -90px;
 }
 
-/* Responsive styles */
 @media (max-width: 1200px) {
   .hero-section {
     width: 100%;

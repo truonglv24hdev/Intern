@@ -1,0 +1,376 @@
+/* TestimonialSection Styles */
+.testimonial-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+.testimonial-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.testimonial-description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Tabs */
+.testimonial-tabs {
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto 30px;
+  position: relative;
+  border-bottom: 1px solid #008eff;
+  z-index: 1;
+}
+
+.testimonial-tabs:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #e0e0e0;
+}
+
+.tab-item {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+/* CSS cho tab đầu tiên chứa icon */
+.tab-item:first-child {
+  display: flex;
+  align-items: center;
+}
+
+/* Reset việc bọc border cho tab đầu tiên khi active */
+.tab-item:first-child.active {
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  border-right: none;
+}
+
+/* Hiệu ứng cho các tab thường khi được chọn */
+.tab-item.active:not(:first-child) {
+  border: 1px solid #008eff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+  background-color: white;
+  z-index: 2;
+}
+
+/* Tab thứ nhất có icon ngoài cùng bên trái */
+.tab-item:first-child .tab-icon {
+  left: 15px;
+  color: #0095ff;
+}
+
+.tab-content {
+  width: 100%;
+}
+
+/* Brochure Tab Styles */
+.brochure-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  justify-items: center;
+}
+
+.brochure-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  width: 384px;
+  height: 444px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.brochure-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.brochure-image {
+  width: 100%;
+  height: 296px; /* 2/3 của 444px */
+  object-fit: cover;
+}
+
+.brochure-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brochure-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.brochure-link {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  margin-top: auto;
+  position: relative;
+  padding-top: 15px;
+}
+
+.brochure-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 330px;
+  height: 1px;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+.arrow-icon {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Testimonies Grid */
+.testimonies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 440px);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px 0; /* 20px cho khoảng cách dọc, 0px cho khoảng cách ngang */
+  width: 100%;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.video-testimonial {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 390px;
+  margin: 0; /* Loại bỏ margin */
+}
+
+.video-testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 390px;
+  height: 220px;
+  background-color: #f0f0f0;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.video-testimonial:hover .video-thumbnail img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-testimonial:hover .overlay {
+  opacity: 1;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff3a3a;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  opacity: 0.85;
+}
+
+.play-icon {
+  font-size: 24px;
+  margin-left: 3px; /* Để căn chỉnh chính xác hơn */
+}
+
+.video-testimonial:hover .play-button {
+  opacity: 1;
+}
+
+.play-button:hover {
+  background-color: #ff3a3a;
+  color: white;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+  .brochure-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .brochure-card {
+    width: 320px;
+    height: 400px;
+  }
+
+  .brochure-image {
+    height: 267px; /* 2/3 của 400px */
+  }
+}
+
+@media (max-width: 992px) {
+  .brochure-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brochure-card {
+    width: 344px;
+    height: 420px;
+  }
+
+  .brochure-image {
+    height: 280px; /* 2/3 của 420px */
+  }
+
+  .testimonies-grid {
+    grid-template-columns: repeat(2, 345px);
+    gap: 15px 0;
+    justify-content: center;
+  }
+  
+  .video-testimonial,
+  .video-thumbnail {
+    width: 340px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .testimonies-grid {
+    grid-template-columns: 390px;
+    gap: 15px;
+  }
+  
+  .video-testimonial,
+  .video-thumbnail {
+    width: 100%;
+    max-width: 390px;
+    margin: 0;
+  }
+  
+  .video-thumbnail {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-tabs {
+    flex-wrap: wrap;
+  }
+
+  .brochure-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .brochure-card {
+    width: 100%;
+    max-width: 384px;
+    height: auto;
+    min-height: 420px;
+  }
+
+  .brochure-image {
+    height: 250px;
+  }
+
+  .testimonies-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .video-testimonial,
+  .video-thumbnail {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 0 15px;
+  }
+  
+  .video-thumbnail {
+    height: 250px;
+  }
+}

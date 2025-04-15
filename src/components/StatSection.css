@@ -1,0 +1,175 @@
+/* StatSection Styles */
+.stat-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #f9fbff;
+}
+
+.stat-container {
+  width: 100%;
+}
+
+/* Agent Profile Section */
+.stat-profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.agent-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.agent-avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agent-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.agent-title {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.agent-achievement {
+  max-width: 500px;
+}
+
+.achievement-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0066FF;
+  margin: 0 0 10px;
+}
+
+.achievement-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+
+/* Stat Metrics Grid */
+.stat-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  background-color: #f1f6fe;
+  border: 1px solid #cfe4fd;
+  border-radius: 10px;
+  padding: 16px 24px;
+  max-width: 550px;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  width: 65px;
+  height: 65px;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  color: #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-right: 16px;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.stat-top {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.stat-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.stat-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .stat-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .agent-achievement {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-metrics {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievement-number {
+    font-size: 24px;
+  }
+  
+  .stat-card {
+    padding: 15px;
+  }
+} 

@@ -28,7 +28,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #e8f4ff;
   position: relative;
-  height: 100%;
+  height: 485px;
+  width: 384px;
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +37,7 @@
 .home-service-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 2px solid #0066FF;
+  border: 1px solid #0066FF;
 }
 
 .home-service-item:hover .home-service-icon {
@@ -65,7 +66,6 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30px;
   background: linear-gradient(to top, white 0%, transparent 100%);
 }
 
@@ -85,8 +85,6 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  width: 40px;
-  height: 40px;
   z-index: 2;
   opacity: 0;
   transform: translateY(10px);
@@ -96,11 +94,12 @@
 .home-service-item:hover .home-service-overlay {
   opacity: 1;
   transform: translateY(0);
+  z-index: 10;
 }
 
 .home-service-arrow {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   background-color: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -108,6 +107,20 @@
   justify-content: center;
   color: #0066FF;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  border: 1px solid rgba(0, 102, 255, 0.2);
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.home-service-item:hover .home-service-arrow {
+  transform:  rotate(-45deg) scale(1.1);
+  opacity: 1;
+  box-shadow: 0 5px 15px rgba(0, 102, 255, 0.2);
 }
 
 .home-service-content {
@@ -162,7 +175,6 @@
   text-align: left;
 }
 
-/* Responsive styles */
 @media (max-width: 1200px) {
   .home-service-section {
     padding: 80px 60px;
@@ -170,6 +182,7 @@
   
   .home-service-grid {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 }
 
@@ -186,11 +199,16 @@
   
   .home-service-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    justify-items: center;
   }
   
   .home-service-header {
     margin-bottom: 40px;
+  }
+  
+  .home-service-item {
+    width: 100%;
+    max-width: 384px;
   }
 }
 

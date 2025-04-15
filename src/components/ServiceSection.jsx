@@ -1,5 +1,7 @@
 import React from "react";
 import "./ServiceSection.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const ServiceSection = () => {
   const serviceItems = [
@@ -71,9 +73,7 @@ const ServiceSection = () => {
                 <img src={item.image} alt={item.title} />
                 <div className="home-service-overlay">
                   <div className="home-service-arrow">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#0066FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <FontAwesomeIcon  icon={faArrowRight} />
                   </div>
                 </div>
               </div>

@@ -6,9 +6,11 @@ import Hero from "../components/hero";
 import ServiceCard from "../components/ServiceCard";
 import AboutSection from "../components/AboutSection";
 import ServiceSection from "../components/ServiceSection";
+import CTASection from "../components/CTASection";
+import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
+import StatSection from "../components/StatSection";
 
 const Home = () => {
-  // Dữ liệu của các service cards
   const serviceData = [
     {
       number: "01",
@@ -65,9 +67,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <AboutSection />
       <ServiceSection />
+      <CTASection />
+      <TestimonialSection />
+      <StatSection />
     </div>
   );
 };

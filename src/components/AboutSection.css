@@ -1,4 +1,3 @@
-/* About Section Styles */
 .home-about-section {
   width: 100%;
   max-width: 1440px;
@@ -80,7 +79,6 @@
   font-weight: 500;
 }
 
-/* Responsive styles for About section */
 @media (max-width: 1200px) {
   .home-about-section {
     padding: 80px 60px;
