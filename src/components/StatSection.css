@@ -60,12 +60,12 @@
 .achievement-number {
   font-size: 28px;
   font-weight: 700;
-  color: #0066FF;
+  color: #0066ff;
   margin: 0 0 10px;
 }
 
 .achievement-text {
-  font-size: 16px;
+  font-size: 28px;
   line-height: 1.5;
   color: #333;
   margin: 0;
@@ -81,10 +81,10 @@
 .stat-card {
   display: flex;
   align-items: center;
-  background-color: #f1f6fe;
-  border: 1px solid #cfe4fd;
-  border-radius: 10px;
+  background-color: #f0f8ff;
   padding: 16px 24px;
+  border-radius: 10px;
+  gap: 5px;
   max-width: 550px;
 }
 
@@ -104,11 +104,13 @@
   justify-content: center;
   font-size: 22px;
   margin-right: 16px;
+  flex-shrink: 0;
 }
 
 .stat-content {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   width: 100%;
 }
 
@@ -121,7 +123,7 @@
 .stat-main {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .stat-number {
@@ -129,6 +131,7 @@
   font-weight: bold;
   color: #000;
   white-space: nowrap;
+  min-width: 60px
 }
 
 .stat-text {
@@ -154,7 +157,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .agent-achievement {
     max-width: 100%;
   }
@@ -164,12 +167,12 @@
   .stat-metrics {
     grid-template-columns: 1fr;
   }
-  
+
   .achievement-number {
     font-size: 24px;
   }
-  
+
   .stat-card {
     padding: 15px;
   }
-} 
+}

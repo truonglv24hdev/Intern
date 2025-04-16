@@ -20,9 +20,9 @@ const StatSection = () => {
           </div>
 
           <div className="agent-achievement">
-            <h2 className="achievement-number">8.62m+</h2>
             <p className="achievement-text">
-              clients experience insurance excellence by us. Trusted services,
+              <span className="achievement-number">8.62m+</span> clients
+              experience insurance excellence by us. Trusted services,
               customer-focused solutions, and a legacy of financial reliability.
             </p>
           </div>

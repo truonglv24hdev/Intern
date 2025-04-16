@@ -1,0 +1,240 @@
+.quote-section {
+  padding: 60px 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-background-cityscape {
+  position: absolute;
+  background-image: url('/images/other/city.png');
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: contain; /* Or adjust as needed */
+  z-index: 1;
+}
+
+.container.quote-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+
+.quote-image-column {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2
+}
+
+.quote-person-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 10px; /* Optional */
+}
+
+.quote-signature {
+  position: absolute;
+  top: 50%;
+  left: -55px; /* Adjust position */
+  transform: translateY(-135%) rotate(-6deg); /* Slight rotation */
+  font-family: 'WindSong', cursive; /* Example cursive font */
+  font-size: 48px;
+  color: #555;
+  opacity: 0.7;
+}
+
+.quote-form-column {
+  flex: 1;
+  z-index: 2
+}
+
+.quote-form-header {
+  margin-bottom: 30px;
+}
+
+.estimate-subtitle {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.estimate-subtitle .arrows {
+  font-weight: bold;
+  margin: 0 5px;
+  color: blue;
+}
+
+.quote-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.3;
+}
+
+.quote-form .form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.slider-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.form-range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #007bff, #00eaff);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Styling the slider thumb */
+.form-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-range-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.slider-value {
+  font-weight: 700;
+  color: #000;
+  min-width: 80px;
+  text-align: right;
+  font-size: 16px;
+}
+
+.quote-submit-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .container.quote-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .quote-image-column, .quote-form-column {
+    width: 100%;
+    max-width: 500px; /* Limit width on smaller screens */
+  }
+  .quote-signature {
+    font-size: 36px;
+    left: -20px;
+  }
+  .quote-person-image {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .quote-title {
+    font-size: 26px;
+  }
+  .estimate-subtitle {
+    font-size: 13px;
+  }
+  .quote-signature {
+    display: none; /* Hide signature on very small screens */
+  }
+} 
+
+.arrow.one {
+  color: #00EAFF;
+}
+
+.arrow.two {
+  color: #008eff;
+}
+
+.arrow.three {
+  color: #00598E;
+}
+
+.form-range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #007bff, #00eaff); /* Gradient */
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
