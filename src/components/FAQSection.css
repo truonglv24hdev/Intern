@@ -1,5 +1,5 @@
 .faq-section {
-  padding: 80px 0;
+  padding: 40px 0;
   background: linear-gradient(135deg, #0099ff 0%, #0066ff 100%);
   color: #fff;
   position: relative;
@@ -177,6 +177,10 @@
   .faq-columns {
     flex-direction: column;
     gap: 0;
+  }
+
+  .faq-item {
+    width: 555px;
   }
 
   .faq-column {

@@ -62,8 +62,8 @@ const FAQSection = () => {
 
   return (
     <section className="faq-section">
-       <span class="shape one"></span>
-       <span class="shape two"></span>
+       <span className="shape one"></span>
+       <span className="shape two"></span>
       <div className="container">
         <div className="faq-header">
           <h2 className="section-title">YOUR ANSWER</h2>

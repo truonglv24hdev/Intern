@@ -77,7 +77,13 @@ const QuoteSection = () => {
               </select>
             </div>
             <div className="form-group slider-group">
-              <label htmlFor="balanceSlider">Limits of Balance:</label>
+              <label htmlFor="balanceSlider">
+                Limits of Balance:
+                <span className="slider-value">
+                  {formatCurrency(balanceLimit)}
+                </span>
+              </label>
+
               <div className="slider-container">
                 <input
                   type="range"
@@ -89,9 +95,6 @@ const QuoteSection = () => {
                   className="form-range-slider"
                   style={getSliderBackground(balanceLimit)}
                 />
-                <span className="slider-value">
-                  {formatCurrency(balanceLimit)}
-                </span>
               </div>
             </div>
             <button type="submit" className="btn btn-primary quote-submit-btn">

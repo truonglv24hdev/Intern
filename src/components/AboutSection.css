@@ -14,7 +14,8 @@
 .home-about-content {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 24px;
+  width: 1100px;
 }
 
 .home-about-image {
@@ -31,11 +32,10 @@
 
 .home-about-info {
   flex: 1;
-  max-width: 50%;
 }
 
 .home-about-subtitle {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
   color: #00191d;
   margin-bottom: 20px;
@@ -45,7 +45,7 @@
 .home-about-text {
   font-size: 18px;
   color: rgba(74, 74, 74, 0.7);
-  line-height: 1.6;
+  line-height: 1.4;
   margin-bottom: 30px;
   font-weight: 400;
   opacity: 0.85;
@@ -101,7 +101,7 @@
   
   .home-about-image, 
   .home-about-info {
-    max-width: 100%;
+    max-width: 45%;
   }
   
   .home-about-subtitle {

@@ -7,7 +7,7 @@
 
 .quote-background-cityscape {
   position: absolute;
-  background-image: url('/images/other/city.png');
+  background-image: url("/images/other/city.png");
   width: 100%;
   height: 100%;
   background-repeat: repeat-x;
@@ -17,7 +17,7 @@
 }
 
 .container.quote-container {
-  max-width: 1100px;
+  max-width: 70%;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2
+  z-index: 2;
 }
 
 .quote-person-image {
@@ -47,15 +47,16 @@
   top: 50%;
   left: -55px; /* Adjust position */
   transform: translateY(-135%) rotate(-6deg); /* Slight rotation */
-  font-family: 'WindSong', cursive; /* Example cursive font */
+  font-family: "WindSong", cursive; /* Example cursive font */
   font-size: 48px;
   color: #555;
   opacity: 0.7;
 }
 
 .quote-form-column {
+  width: 100%;
   flex: 1;
-  z-index: 2
+  z-index: 2;
 }
 
 .quote-form-header {
@@ -89,7 +90,7 @@
 }
 
 .form-control {
-  width: 100%;
+  width: 85%;
   padding: 12px 15px;
   font-size: 16px;
   border: 1px solid #ddd;
@@ -109,11 +110,12 @@
 }
 
 .slider-group label {
-  display: block;
+  display: flex;
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 15px;
   color: #333;
+  gap: 225px;
 }
 
 .slider-container {
@@ -121,6 +123,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 15px;
+  width: 85%;
 }
 
 .form-range-slider {
@@ -141,7 +144,7 @@
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #007bff;
+  background: black;
   border-radius: 50%;
   cursor: pointer;
   border: 2px solid #fff;
@@ -162,7 +165,6 @@
   font-weight: 700;
   color: #000;
   min-width: 80px;
-  text-align: right;
   font-size: 16px;
 }
 
@@ -177,6 +179,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .quote-submit-btn:hover {
@@ -189,7 +192,17 @@
     flex-direction: column;
     gap: 30px;
   }
-  .quote-image-column, .quote-form-column {
+
+  .quote-background-cityscape{
+    width: 550px;
+  }
+
+  .quote-section{
+    padding: 2px 0;
+  }
+
+  .quote-image-column,
+  .quote-form-column {
     width: 100%;
     max-width: 500px; /* Limit width on smaller screens */
   }
@@ -212,10 +225,10 @@
   .quote-signature {
     display: none; /* Hide signature on very small screens */
   }
-} 
+}
 
 .arrow.one {
-  color: #00EAFF;
+  color: #00eaff;
 }
 
 .arrow.two {
@@ -223,7 +236,7 @@
 }
 
 .arrow.three {
-  color: #00598E;
+  color: #00598e;
 }
 
 .form-range-slider {
@@ -237,4 +250,3 @@
   cursor: pointer;
   position: relative;
 }
-

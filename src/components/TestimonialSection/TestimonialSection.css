@@ -47,11 +47,11 @@
 .testimonial-tabs:before {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 0px;
+  bottom: 0px;
   height: 1px;
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: rgb(224, 224, 224);
 }
 
 .tab-item {
@@ -76,18 +76,21 @@
 
 /* Reset việc bọc border cho tab đầu tiên khi active */
 .tab-item:first-child.active {
-  border: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   border-bottom: none;
   border-right: none;
 }
 
 /* Hiệu ứng cho các tab thường khi được chọn */
 .tab-item.active:not(:first-child) {
-  border: 1px solid #008eff;
-  border-bottom: 1px solid #fff;
   margin-bottom: -1px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   z-index: 2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0, 142, 255) rgb(0, 142, 255) rgb(255, 255, 255);
+  border-image: initial;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 /* Tab thứ nhất có icon ngoài cùng bên trái */
@@ -359,7 +362,6 @@
   }
 
   .testimonies-grid {
-    grid-template-columns: 1fr;
     gap: 15px;
   }
   
@@ -368,9 +370,10 @@
     width: 100%;
     max-width: 390px;
     margin: 0 0 15px;
+    height: 210px;
   }
   
   .video-thumbnail {
-    height: 250px;
+    height: 210px;
   }
 }
