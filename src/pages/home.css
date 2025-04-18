@@ -12,27 +12,23 @@ html, body {
 }
 
 .home-needs-section {
-  width: 100%;
-  max-width: 1440px;
+  width: 2474px;
   height: auto;
   min-height: 571px;
-  margin: 0 auto;
   padding: 100px 120px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   box-sizing: border-box;
 }
 
 .home-container {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
+  width: 1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left:100px;
 }
 
 .home-needs-header {
@@ -78,7 +74,6 @@ html, body {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  padding: 32px 24px;
   position: relative;
   text-align: left;
   overflow: hidden;
@@ -86,6 +81,7 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 260px;
+  padding-left: 15px;
 }
 
 .home-service-card:hover {

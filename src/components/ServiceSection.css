@@ -113,7 +113,6 @@
 }
 
 .home-service-content {
-  padding: 25px 20px;
   position: relative;
   height: 55%;
   flex-grow: 1;
@@ -164,6 +163,7 @@
   opacity: 1;
   margin: 0;
   text-align: left;
+  width: 330px;
 }
 
 @media (max-width: 1200px) {

@@ -1,9 +1,8 @@
 .hero-section {
   width: 100%;
-  max-width: 1440px;
+  max-width: 3000px;
   height: 600px;
   background-color: #EFF3FF;
-  margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
@@ -15,10 +14,9 @@
 
 .hero-content {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   height: 100%;
-  padding: 0 100px;
   position: relative;
   z-index: 1;
 }

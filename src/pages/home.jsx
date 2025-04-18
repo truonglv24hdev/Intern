@@ -1,7 +1,6 @@
 import React from "react";
 import "./home.css";
-import Header from "../components/header";
-import Navigation from "../components/navigation";
+
 import Hero from "../components/hero";
 import ServiceCard from "../components/ServiceCard";
 import AboutSection from "../components/AboutSection";
@@ -47,8 +46,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <Header />
-      <Navigation />
+      
       <Hero />
       <section className="home-needs-section">
         <div className="home-container">

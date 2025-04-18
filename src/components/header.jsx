@@ -1,24 +1,34 @@
-import React from 'react';
-import './header.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCertificate, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import "./header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCertificate,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
     <header>
       <div className="top-header">
-        <div className="container">
+        <div className="container-header">
           <div className="contact-info">
             <div className="contact-item license">
-              <i><FontAwesomeIcon icon={faCertificate} /></i>
+              <div className="icon-circle">
+                <FontAwesomeIcon icon={faCertificate} />
+              </div>
               <span>National License: 20310594</span>
             </div>
             <div className="contact-item email">
-              <i><FontAwesomeIcon icon={faEnvelope} /></i>
+              <div className="icon-circle">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </div>
               <span>thao.ho@theguardians.life</span>
             </div>
             <div className="contact-item phone">
-              <i><FontAwesomeIcon icon={faPhone} /></i>
+              <div className="icon-circle">
+                <FontAwesomeIcon icon={faPhone} />
+              </div>
               <span>971-269-8689</span>
             </div>
           </div>
