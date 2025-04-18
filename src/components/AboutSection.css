@@ -97,11 +97,12 @@
   .home-about-content {
     flex-direction: column;
     gap: 40px;
+    width: 100%;
   }
   
   .home-about-image, 
   .home-about-info {
-    max-width: 45%;
+    max-width: 100%;
   }
   
   .home-about-subtitle {

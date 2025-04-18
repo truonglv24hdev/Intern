@@ -193,6 +193,15 @@
     gap: 30px;
   }
 
+  .form-control{
+    width: 100%;
+  }
+
+  .slider-group label{
+    gap: 65px;
+    width: 400px;
+  }
+
   .quote-background-cityscape{
     width: 550px;
   }
@@ -203,8 +212,7 @@
 
   .quote-image-column,
   .quote-form-column {
-    width: 100%;
-    max-width: 500px; /* Limit width on smaller screens */
+    width: 255px;
   }
   .quote-signature {
     font-size: 36px;
@@ -223,7 +231,8 @@
     font-size: 13px;
   }
   .quote-signature {
-    display: none; /* Hide signature on very small screens */
+    font-size: 25px;
+    left: -50px;
   }
 }
 

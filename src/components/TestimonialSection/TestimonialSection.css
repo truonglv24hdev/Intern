@@ -317,7 +317,7 @@
   
   .video-testimonial,
   .video-thumbnail {
-    width: 340px;
+    width: 355px;
     margin: 0;
   }
 }
@@ -330,19 +330,24 @@
   
   .video-testimonial,
   .video-thumbnail {
-    width: 100%;
     max-width: 390px;
-    margin: 0;
+    
   }
-  
-  .video-thumbnail {
-    height: 250px;
+
+  .video-testimonial{
+    margin-left: 20px;
   }
+
 }
 
 @media (max-width: 768px) {
   .testimonial-tabs {
     flex-wrap: wrap;
+    font-size: 20px; 
+  }
+
+  .testimonial-tabs .tab-item {
+    padding: 3px; 
   }
 
   .brochure-grid {
@@ -365,15 +370,4 @@
     gap: 15px;
   }
   
-  .video-testimonial,
-  .video-thumbnail {
-    width: 100%;
-    max-width: 390px;
-    margin: 0 0 15px;
-    height: 210px;
-  }
-  
-  .video-thumbnail {
-    height: 210px;
-  }
 }

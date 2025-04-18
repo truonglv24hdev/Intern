@@ -161,7 +161,7 @@
 }
 
 .faq-answer {
-  padding: 0 20px 20px 75px;
+  padding: 0 20px 20px 15px;
   background-color: #fff;
   color: #555;
   font-size: 15px;
@@ -179,8 +179,16 @@
     gap: 0;
   }
 
+  .faq-question{
+    width: 100%;
+  }
+
+  .faq-answer{
+    padding: 5px;
+  }
+
   .faq-item {
-    width: 555px;
+    width: 350px;
   }
 
   .faq-column {

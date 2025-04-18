@@ -21,12 +21,12 @@ const Navigation = () => {
           </div>
           <ul className="nav-menu">
             <li><a href="#" className="active">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">SERVICE</a></li>
-            <li><a href="#">TESTIMONIAL</a></li>
-            <li><a href="#">AWARDS</a></li>
-            <li><a href="#">QUESTIONS</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a href="#service">SERVICE</a></li>
+            <li><a href="#testimonial">TESTIMONIAL</a></li>
+            <li><a href="#awards">AWARDS</a></li>
+            <li><a href="#questions">QUESTIONS</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
             <li className="language">
               <a href="#">
                 <img src="/images/other/vietnam-flag.png" alt="Vietnamese Flag" />

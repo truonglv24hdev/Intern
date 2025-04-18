@@ -57,7 +57,7 @@ const ServiceSection = () => {
   ];
 
   return (
-    <section className="home-service-section">
+    <section className="home-service-section" id="service">
       <div className="home-container">
         <div className="home-service-header">
           <h2 className="home-section-title">SERVICE</h2>

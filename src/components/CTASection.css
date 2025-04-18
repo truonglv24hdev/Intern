@@ -144,6 +144,7 @@
 
 @media (max-width: 992px) {
   .home-cta-section {
+    margin: 0;
     padding: 40px 40px;
   }
   
@@ -160,6 +161,7 @@
   .cta-content {
     flex-direction: column;
     gap: 30px;
+    max-width: 100%;
   }
   
   .cta-left-column,
@@ -196,6 +198,8 @@
   
   .cta-description {
     font-size: 16px;
+    width: 100%;
+    text-align: center;
   }
   
   .cta-phone-number {

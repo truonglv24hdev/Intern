@@ -18,7 +18,7 @@ const AwardsSection = () => {
   ];
 
   return (
-    <section className="awards-section">
+    <section className="awards-section" id="awards">
       <div className="container">
         <div className="awards-header">
           <h2 className="section-title">AWARDS</h2>

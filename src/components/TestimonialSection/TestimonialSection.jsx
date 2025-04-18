@@ -23,7 +23,7 @@ import React, { useState } from "react";
    };
  
    return (
-     <section className="testimonial-section">
+     <section className="testimonial-section" id="testimonial">
        <div className="testimonial-container">
          <div className="testimonial-header">
            <h2 className="testimonial-title">TESTIMONIAL</h2>

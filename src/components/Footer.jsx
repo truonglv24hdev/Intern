@@ -35,7 +35,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="footer-section">
+    <footer className="footer-section" id="footer">
       <div className="container footer-container">
         {/* Column 1: Logo & Contact Info */}
         <div className="footer-column about-column">

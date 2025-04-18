@@ -24,7 +24,7 @@ const QuoteSection = () => {
   };
 
   return (
-    <section className="quote-section">
+    <section className="quote-section" id="questions">
       <div className="container quote-container">
         <div className="quote-image-column">
           {/* Image placed via CSS background or img tag */}
@@ -73,7 +73,6 @@ const QuoteSection = () => {
                 <option value="life">Life Insurance</option>
                 <option value="health">Health Insurance</option>
                 <option value="auto">Auto Insurance</option>
-                {/* Add more options as needed */}
               </select>
             </div>
             <div className="form-group slider-group">
