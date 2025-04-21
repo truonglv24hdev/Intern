@@ -16,7 +16,7 @@
   color: oklch(0.21 0.034 264.665);
   display: grid;
   gap: 24px;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 450px 450px 450px;
   grid-template-rows: 485px 485px 485px;
   justify-content: center;
   line-height: 24px;
