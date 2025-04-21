@@ -3,6 +3,7 @@
   height: auto;
   width: 100%;
   max-width: 2000px;
+  position: relative;
 }
 
 .nav-container {
@@ -10,8 +11,6 @@
   align-items: center;
   justify-content: space-evenly;
   height: auto;
-  min-height: 80px;
-  width: 100%;
   max-width: 2115px;
   margin: 0 auto;
   padding: 0 15px;
@@ -94,13 +93,15 @@
 .logo-nav-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .nav-menu li a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px 0;
   position: relative;
   transition: color 0.3s;
@@ -145,6 +146,98 @@
   color: #666;
 }
 
+/* Mobile menu toggle button */
+.mobile-toggle {
+  display: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 8px;
+  margin-right: 5px;
+  transition: color 0.3s;
+}
+
+.mobile-toggle:hover {
+  color: #0072bb;
+}
+
+/* Mobile sidebar menu */
+.mobile-menu-sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background-color: #2d2e40;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu-sidebar.active {
+  left: 0;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-title {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mobile-menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu-items li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-items li a {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.mobile-menu-items li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
 @media (max-width: 1024px) {
   .nav-menu {
     gap: 20px;
@@ -157,66 +250,45 @@
   .logo-main {
     font-size: 10px;
   }
-
-  
 }
 
 @media (max-width: 768px) {
-  .main-nav {
-    height: auto;
-    width: 100%;
+  .mobile-toggle {
+    display: block;
   }
 
-  .nav-container {
-    flex-direction: column;
-    padding: 15px;
-    height: auto;
-    width: 100%;
+  .logo-text{
+    height: 20px;
   }
 
+  .logo a{
+    height: 60px;
+  }
+  
+  .desktop-menu {
+    display: none;
+  }
+  
+  .logo-nav-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
   .logo {
     margin-right: 0;
-    margin-bottom: 15px;
-    max-width: 100%;
-  }
-
-  .nav-menu-container {
-    width: 100%;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
-    padding: 15px 0;
-  }
-
-  .nav-menu li {
-    width: 100%;
-    text-align: center;
-    padding: 8px 0;
-    border-bottom: 1px solid #f0f0f0;
-  }
-
-  .nav-menu li:last-child {
-    border-bottom: none;
-  }
-
-  .language {
-    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
   .nav-container {
     padding: 10px;
-  }
-  
-  .nav-menu li a {
-    font-size: 14px;
+    width: 100%;
+    height: 60px;
   }
   
   .logo img {
-    height: 40px;
+    height: 30px;
   }
 }

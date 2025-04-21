@@ -1,9 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './navigation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setShowMobileMenu(!showMobileMenu);
+  };
+
+  const closeMobileMenu = () => {
+    setShowMobileMenu(false);
+  };
+
+  // Close menu when screen size changes to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768 && showMobileMenu) {
+        setShowMobileMenu(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [showMobileMenu]);
+
+  // Prevent body scrolling when mobile menu is open
+  useEffect(() => {
+    if (showMobileMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [showMobileMenu]);
+
   return (
     <nav className="main-nav">
       <div className="container">
@@ -18,8 +53,13 @@ const Navigation = () => {
                 </div>
               </a>
             </div>
+            
+            <div className="mobile-toggle" onClick={toggleMobileMenu}>
+              <FontAwesomeIcon icon={faBars} />
+            </div>
           </div>
-          <ul className="nav-menu">
+          
+          <ul className="nav-menu desktop-menu">
             <li><a href="#" className="active">HOME</a></li>
             <li><a href="#about-us">ABOUT US</a></li>
             <li><a href="#service">SERVICE</a></li>
@@ -37,6 +77,27 @@ const Navigation = () => {
           </ul>
         </div>
       </div>
+
+      {/* Mobile sidebar menu */}
+      <div className={`mobile-menu-sidebar ${showMobileMenu ? 'active' : ''}`}>
+        <div className="mobile-menu-header">
+          <div className="sidebar-title">TRANG CHỦ</div>
+          <button className="close-menu" onClick={toggleMobileMenu}>
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+        </div>
+        <ul className="mobile-menu-items">
+          <li><a href="#" onClick={closeMobileMenu}>TRANG CHỦ</a></li>
+          <li><a href="#about-us" onClick={closeMobileMenu}>DỊCH VỤ</a></li>
+          <li><a href="#service" onClick={closeMobileMenu}>CHỨNG THỰC</a></li>
+          <li><a href="#awards" onClick={closeMobileMenu}>GIẢI THƯỞNG</a></li>
+          <li><a href="#footer" onClick={closeMobileMenu}>LIÊN HỆ</a></li>
+          <li><a href="#questions" onClick={closeMobileMenu}>CÂU HỎI</a></li>
+        </ul>
+      </div>
+      
+      {/* Overlay for mobile menu */}
+      {showMobileMenu && <div className="mobile-menu-overlay" onClick={closeMobileMenu}></div>}
     </nav>
   );
 };

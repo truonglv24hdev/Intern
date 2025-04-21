@@ -6,6 +6,7 @@ import {
   faEnvelope,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import Navigation from "./navigation";
 
 const Header = () => {
   return (
@@ -34,6 +35,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Navigation />
     </header>
   );
 };

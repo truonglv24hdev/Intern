@@ -1,0 +1,49 @@
+.mobile-contact-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  height: 50px;
+}
+
+.mobile-contact-bar .contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 50%;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: white;
+  height: 100%;
+}
+
+.mobile-contact-bar .contact-button svg {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #2c5ec7;
+}
+
+.phone-button {
+  border-right: 1px solid #e0e0e0;
+}
+
+.email-button {
+  background-color: #3b5998;
+}
+
+@media (max-width: 768px) {
+  .mobile-contact-bar {
+    display: flex;
+  }
+  
+  /* Add padding to the body to prevent content from being hidden behind the fixed bar */
+  body {
+    padding-bottom: 50px;
+  }
+} 

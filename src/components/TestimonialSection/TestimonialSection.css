@@ -1,7 +1,6 @@
 /* TestimonialSection Styles */
 .testimonial-section {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 60px 20px;
 }
@@ -16,8 +15,6 @@
   text-align: center;
   margin-bottom: 40px;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 60px;
 }
 
@@ -185,12 +182,13 @@
 /* Testimonies Grid */
 .testimonies-grid {
   display: grid;
-  grid-template-columns: repeat(2, 440px);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
-  gap: 20px 0; /* 20px cho khoảng cách dọc, 0px cho khoảng cách ngang */
+  gap: 20px 0px;
   width: 100%;
   margin-top: 30px;
-  justify-content: center;
+  margin-left: 50px;
+  /* justify-content: center; */
 }
 
 .video-testimonial {
@@ -200,7 +198,8 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 390px;
+  width: 845px;
+  height: 475px;
   margin: 0; /* Loại bỏ margin */
 }
 
@@ -211,8 +210,8 @@
 
 .video-thumbnail {
   position: relative;
-  width: 390px;
-  height: 220px;
+  width: 845px;
+
   background-color: #f0f0f0;
 }
 
@@ -314,7 +313,7 @@
     gap: 15px 0;
     justify-content: center;
   }
-  
+
   .video-testimonial,
   .video-thumbnail {
     width: 355px;
@@ -327,27 +326,22 @@
     grid-template-columns: 390px;
     gap: 15px;
   }
-  
+
   .video-testimonial,
   .video-thumbnail {
-    max-width: 390px;
-    
+    width: 320px;
+    height: 200px;
   }
-
-  .video-testimonial{
-    margin-left: 20px;
-  }
-
 }
 
 @media (max-width: 768px) {
   .testimonial-tabs {
     flex-wrap: wrap;
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   .testimonial-tabs .tab-item {
-    padding: 3px; 
+    padding: 3px;
   }
 
   .brochure-grid {
@@ -368,6 +362,6 @@
 
   .testimonies-grid {
     gap: 15px;
+    margin-left: 40px;
   }
-  
 }

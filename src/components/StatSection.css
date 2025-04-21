@@ -1,8 +1,6 @@
 /* StatSection Styles */
 .stat-section {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 60px 20px;
   background-color: #f9fbff;
 }
@@ -15,7 +13,7 @@
 .stat-profile {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 40px;
   gap: 30px;
 }
@@ -24,6 +22,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 285px;
+  height: 150px;
 }
 
 .agent-avatar {
@@ -54,7 +54,14 @@
 }
 
 .agent-achievement {
-  max-width: 500px;
+  width: 1028px;
+  height: 150px;
+  color: #00191e;
+  font-family: Arial;
+  font-size: 30px;
+  letter-spacing: 0.72px;
+  line-height: 50px;
+  align-content: center;
 }
 
 .achievement-number {
@@ -74,18 +81,27 @@
 /* Stat Metrics Grid */
 .stat-metrics {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   gap: 20px;
+  width: 1713px;
+  height: 272px;
+  justify-items: center;
+  margin-left: 125px;
 }
 
 .stat-card {
-  display: flex;
   align-items: center;
-  background-color: #f0f8ff;
-  padding: 16px 24px;
-  border-radius: 10px;
-  gap: 5px;
-  max-width: 550px;
+  background-color: #eff3ff;
+  border-color: #b3daff;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  color: oklch(0.21 0.034 264.665);
+  display: flex;
+  gap: 24px;
+  line-height: 24px;
+  padding: 24px;
+  width: 845px;
 }
 
 .stat-card:hover {
@@ -94,8 +110,8 @@
 }
 
 .stat-icon {
-  width: 65px;
-  height: 65px;
+  width: 74px;
+  height: 74px;
   border: 2px solid #3b82f6;
   border-radius: 50%;
   color: #3b82f6;
@@ -127,11 +143,11 @@
 }
 
 .stat-number {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
   color: #000;
   white-space: nowrap;
-  min-width: 60px
+  min-width: 60px;
 }
 
 .stat-text {
@@ -140,15 +156,19 @@
 }
 
 .stat-title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   color: #0f172a;
+  font-family: Arial;
+  line-height: 37.3333px;
 }
 
 .stat-description {
   font-size: 14px;
   color: #6b7280;
+  font-family: Arial;
   margin-top: 2px;
+  line-height: 22.8571px;
 }
 
 /* Responsive Styles */
@@ -156,6 +176,7 @@
   .stat-profile {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 110px;
   }
 
   .agent-achievement {
@@ -166,13 +187,40 @@
 @media (max-width: 768px) {
   .stat-metrics {
     grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
 
   .achievement-number {
     font-size: 24px;
   }
 
+  .stat-main{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .stat-content{
+    width: 100%;
+  }
+
+  .stat-number{
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .stat-icon{
+    height: 52px;
+    width: 52px;
+  }
+
   .stat-card {
     padding: 15px;
+    width: 327px;
+    height: 196px;
+    flex-direction: column;
+    gap: 0;
   }
 }
