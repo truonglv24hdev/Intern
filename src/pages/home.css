@@ -13,7 +13,7 @@ body {
 }
 
 .home-needs-section {
-  width: 2474px;
+  width: 100%;
   height: auto;
   min-height: 571px;
   padding: 100px 120px;
@@ -25,11 +25,10 @@ body {
 }
 
 .home-container {
-  width: 1500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 100px;
 }
 
 .home-needs-header {
@@ -65,7 +64,7 @@ body {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-  width: 1800px;
+  width: 100%;
 }
 
 .home-service-card {
@@ -140,6 +139,7 @@ body {
   min-height: 60px;
   display: flex;
   align-items: flex-start;
+  width: 250px;
 }
 
 .home-service-description {
