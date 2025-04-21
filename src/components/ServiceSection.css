@@ -131,13 +131,13 @@
   }
 }
 
-.service-bg-icon{
-  width: 331px;
-}
-
 @media (max-width: 768px) {
   .home-service-section {
     padding: 50px 30px;
+  }
+
+  .service-bg-icon{
+    width: 331px;
   }
 
   .home-service-grid {
