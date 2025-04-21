@@ -1,5 +1,5 @@
 .home-about-section {
-  width: 2474px;
+  width: 100%;
   margin: 0 auto;
   padding: 100px 120px;
   background-color: #f7fcff;
@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  width: 1713px;
+  width: 1233px;
 }
 
 .home-about-image {
